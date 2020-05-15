@@ -1,11 +1,15 @@
 import React from "react";
+import { Route } from 'react-router-dom';
+import HomePage from "./components/HomePage";
+import PizzaForm from "./components/PizzaForm";
 
 const App = () => {
+  
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+  <div className="routes">
+  <Route exact path="/" component={HomePage}/>
+  <Route exact path="/pizza" component={PizzaForm} />
+   </div>
   );
 };
 export default App;
