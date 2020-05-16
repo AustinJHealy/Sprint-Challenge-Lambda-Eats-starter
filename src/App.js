@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from 'react-router-dom';
 import HomePage from "./components/HomePage";
 import PizzaForm from "./components/PizzaForm";
+import './App.css';
 
 const App = () => {
   
